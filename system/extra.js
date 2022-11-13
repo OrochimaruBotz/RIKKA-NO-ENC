@@ -82,7 +82,7 @@ Socket = (...args) => {
          contextInfo: {
             mentionedJid: parseMention(text),
             externalAdReply: {
-               title: properties.title || 'RIKKA BOT OFFICIAL',
+               title: properties.title || 'Sung Jinwoo',
                body: properties.body || null,
                mediaType: 1,
                previewType: 0,
@@ -145,7 +145,7 @@ Socket = (...args) => {
          contextInfo: {
             mentions: parseMention(text),
             externalAdReply: {
-               title: 'GILZZ BOTZ',
+               title: 'Sung Jinwoo',
                mediaType: 2,
                mediaUrl: `https://instagram.com`,
                body: '',
@@ -203,10 +203,10 @@ Socket = (...args) => {
                mediaType: 2,
                mediaUrl: `https://jsonformatter.org`,
                body: '',
-               description: 'RIKKA BOT',
+               description: 'Sung Jinwoo',
                showAdAttribution: false,
                thumbnail: pic,
-               sourceUrl: 'https://wa.me/6285730794089?text=sewabot+bang'
+               sourceUrl: 'https://wa.me/6288804947282?text=sewabot+bang'
             }
          }
       }, {
@@ -232,7 +232,7 @@ Socket = (...args) => {
                mediaType: 2,
                showAdAttribution: true,
                thumbnail: await Func.fetchBuffer(pic),
-               sourceUrl: 'https://wa.me/6285730794089?text=bang+upgrade+premium+biar+unlimited+limit'
+               sourceUrl: 'https://wa.me/6288804947282?text=bang+upgrade+premium+biar+unlimited+limit'
             }
          }
       }, {
@@ -334,7 +334,7 @@ Socket = (...args) => {
       let list = []
       contact.map(v => list.push({
          displayName: v.name,
-         vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${v.name}\nORG:Owner RIKKA BOT\nTEL;type=CELL;type=VOICE;waid=${v.number}:${PhoneNumber('+' + v.number).getNumber('international')}\nEMAIL;type=Email:Rikkaaa/my.id\nURL;type=Website:https://Rikaaa@chiki.id\nADR;type=Location:;;🇰🇷 Korea;;\nOther:${v.about}\nEND:VCARD`
+         vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${v.name}\nORG:Owner SungJinwoo\nTEL;type=CELL;type=VOICE;waid=${v.number}:${PhoneNumber('+' + v.number).getNumber('international')}\nEMAIL;type=Email:SungJinwoo/my.id\nURL;type=Website:https://sungjinwoo@chiki.id\nADR;type=Location:;;🇮🇩Indo;;\nOther:${v.about}\nEND:VCARD`
       }))
       return client.sendMessage(jid, {
          contacts: {
